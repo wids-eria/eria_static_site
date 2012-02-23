@@ -1,0 +1,761 @@
+*{margin: 0; padding: 0;}
+
+/* GENERALS --------------------------------------*/
+
+html{ background:url(images/bg_tile.png); overflow:scroll; }
+
+body{  }
+
+ul{ list-style:none; }
+
+hr{
+    width:100%;
+    margin:10px 0 10px 0;
+    border-top:none;
+    border-bottom:1px dashed #bababa;
+    float:left;
+}
+    #featured_content hr{ margin:0 0 0 0;}
+
+a{
+    text-decoration:none;
+    color:#ff9454;
+    text-shadow:0px 1px 1px white;
+    font-weight:bold;
+    font-size:12px;
+    padding:0 2px 0 2px;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius:4px;
+    khtml-border-radius: 4px;
+    
+    transition: all 0.35s;
+    -moz-transition: all 0.35s; 
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    }
+    
+    a:hover{
+        color:white;
+        background: #ff9454;
+        text-shadow:none;
+        
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius:4px;
+        khtml-border-radius: 4px;
+        
+        transition: all 0.35s;
+        -moz-transition: all 0.35s; 
+        -webkit-transition: all 0.35s;
+        -o-transition: all 0.35s;
+    }
+    
+::selection{ background:#ff9454; }
+ p::selection{ color:white; text-shadow:none; }
+ a::selection{ color:#333; text-shadow:none; }
+    
+p{
+    font-family:verdana;
+    color:#727272;
+    text-shadow:0px 1px 1px white;
+    font-size:13px;
+}
+
+h1{  } 
+
+/* end GENERALS ---------------------------------*/
+
+
+
+/* typekit fonts
+  
+  font-family: "league-gothic";
+  font-family: "abril-fatface";
+  
+  
+*/
+
+
+
+
+/* CLASSES --------------------------------------*/
+
+.clear{ clear: both; }
+
+.floatleft{ float:left; }
+
+.orange{ color:#ff9454; }
+
+.green{ color:#7cb232; }
+
+.bold{ font-weight:bold; }
+
+.floatleft{ float:left; }
+
+.floatright{ float:right; }
+
+.CenterText{ text-align:center; }
+
+.AlignCenter{ margin:0 auto; }
+
+.TinyHeader{
+    color:#909090;
+    text-shadow:0px 1px 1px white;
+    text-transform:uppercase;
+    font-size:14px;
+    font-family: 'Maven Pro', sans-serif;
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:5px;
+    margin:0 0 0 0;
+}
+
+.SubHeader{
+    color:#7cb232;
+    text-shadow:0px 1px 1px white;
+    text-transform:uppercase;
+    font-size:30px;
+    font-family: "league-gothic";
+    text-align:center;
+    letter-spacing:5px;
+    margin:0 0 3px 0;
+}
+
+
+.LargeHeader{
+    color:#7cb232;
+    text-shadow:0px 1px 1px white;
+    text-transform:uppercase;
+    font-size:40px;
+    font-family: "league-gothic";
+    text-align:center;
+    letter-spacing:5px;
+    margin:0 0 0 0;
+}
+
+.MavenBold{
+    text-transform:uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* end CLASSES ----------------------------------*/
+
+
+/* This is the css to make the current page nav link active */
+body#ERIA_HomePage .navigation li a.home{
+    color:#fc670d;
+    text-shadow: 0px 2px 1px black;
+    background: rgba(0,0,0, 0.125);
+    box-shadow:inset 0 0 20px black;
+    
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    
+    transition: all 0.35s;
+    -moz-transition: all 0.35s; 
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;    
+}
+
+
+.page_wrap{ width:980px; margin: 0 auto; }
+
+
+button{  }
+
+button.OrangeButton{
+    font-family: 'Maven Pro', sans-serif;
+    font-size:15px;
+    padding:6px 10px;
+    border:1px solid #cf8c49;
+
+    margin:10px 0 0 0;    
+    
+    color:#a23d00;
+
+    text-shadow:0px 1px 0px #ffb386;
+    
+    text-transform:uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    text-align:center;
+    font-weight:bold;
+    
+    background: rgb(255,182,66); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,182,66,1) 0%, rgba(249,120,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,182,66,1)), color-stop(100%,rgba(249,120,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,182,66,1) 0%,rgba(249,120,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,182,66,1) 0%,rgba(249,120,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,182,66,1) 0%,rgba(249,120,0,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(255,182,66,1) 0%,rgba(249,120,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb642', endColorstr='#f97800',GradientType=0 ); /* IE6-9 */   
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    khtml-border-radius: 5px;
+}
+    
+    button.OrangeButton:hover, button.OrangeButton:focus{
+        text-shadow:0px 1px 0px #ffd5bc;
+        
+        margin:10px 0 0 0;
+        
+        background: rgb(252,227,0); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(252,227,0,1) 0%, rgba(255,136,0,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,227,0,1)), color-stop(100%,rgba(255,136,0,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(252,227,0,1) 0%,rgba(255,136,0,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(252,227,0,1) 0%,rgba(255,136,0,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(252,227,0,1) 0%,rgba(255,136,0,1) 100%); /* IE10+ */
+        background: linear-gradient(top,  rgba(252,227,0,1) 0%,rgba(255,136,0,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce300', endColorstr='#ff8800',GradientType=0 ); /* IE6-9 */
+
+        border:1px solid #894400;
+        
+        box-shadow:0px 2px 2px #9d9d9d;
+        cursor: pointer;
+    }
+    
+        button.OrangeButton:active{
+            color:#a55627;
+            background:#ff9727;
+            
+            text-shadow:none;
+            
+            box-shadow: inset 0px 2px 5px #a45500;
+            border:none;
+            margin:11px 1px 1px 1px;
+                
+        }
+        
+        
+
+button.GreenButton{
+    font-family: 'Maven Pro', sans-serif;
+    font-size:12px;
+    padding:6px 10px;
+    border:1px solid #548e00;
+    
+    color:#253f00;
+
+    text-shadow:0px 1px 0px #9de13c;
+    
+    text-transform:uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    text-align:center;
+    font-weight:bold;
+    
+    background: rgb(153,216,55); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(153,216,55,1) 0%, rgba(91,150,29,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,216,55,1)), color-stop(100%,rgba(91,150,29,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(153,216,55,1) 0%,rgba(91,150,29,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(153,216,55,1) 0%,rgba(91,150,29,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(153,216,55,1) 0%,rgba(91,150,29,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(153,216,55,1) 0%,rgba(91,150,29,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d837', endColorstr='#5b961d',GradientType=0 ); /* IE6-9 */
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    khtml-border-radius: 5px;
+}
+    
+    button.GreenButton:hover, button.GreenButton:focus{
+        text-shadow:0px 1px 0px #b6e96e;
+        
+        background: rgb(177,237,37); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(177,237,37,1) 0%, rgba(128,188,37,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(177,237,37,1)), color-stop(100%,rgba(128,188,37,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(177,237,37,1) 0%,rgba(128,188,37,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(177,237,37,1) 0%,rgba(128,188,37,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(177,237,37,1) 0%,rgba(128,188,37,1) 100%); /* IE10+ */
+        background: linear-gradient(top,  rgba(177,237,37,1) 0%,rgba(128,188,37,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b1ed25', endColorstr='#80bc25',GradientType=0 ); /* IE6-9 */
+
+        border:1px solid #253f00;
+        
+        box-shadow:0px 2px 2px #9d9d9d;
+        cursor: pointer;
+    }
+    
+        button.GreenButton:active{
+            color:#313e1f;
+            background:#6db900;
+            
+            text-shadow:none;
+            
+            box-shadow: inset 0px 2px 5px #425921;
+            border:none;
+            margin:1px;
+                
+        }
+        
+        
+
+button.GrayButton{
+    font-family: 'Maven Pro', sans-serif;
+    font-size:12px;
+    padding:6px 10px;
+    border:1px solid #a7a7a7;
+    
+    color:#333;
+
+    text-shadow:0px 1px 0px white;
+    
+    text-transform:uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    text-align:center;
+    font-weight:bold;
+    
+    background: rgb(234,234,234); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(234,234,234,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,234,234,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    khtml-border-radius: 5px;
+}
+    
+    button.GrayButton:hover, button.GrayButton:focus{
+        text-shadow:0px 1px 0px white;
+        
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(226,226,226,1) 100%); /* IE10+ */
+        background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(226,226,226,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+
+        border:1px solid #333;
+        
+        box-shadow:0px 2px 2px #9d9d9d;
+        cursor: pointer;
+    }
+    
+        button.GrayButton:active{
+            color:#757575;
+            background:#cacaca;
+            
+            text-shadow:none;
+            
+            box-shadow: inset 0px 2px 5px #666;
+            border:none;
+            margin:1px;
+                
+        }
+        
+        
+
+.small_eria_logo{ display:none; }
+
+.navigation_wrapper{ width:980px; height:118px; margin:0 0 15px 0; }
+
+    .navigation{ width:980px; margin:0 auto; }
+    
+    .logo_container{
+        height:118px;
+        width:137px;
+        /*background:url(images/eria_logo.png);*/
+        float:left;
+    }
+    
+    .nav{ 
+        height:62px;
+        width:843px;
+        float:left;
+        background:rgba(0, 0, 0, 0.4);
+        margin:20px 0 0 0;
+        
+        border-top:3px solid black;
+        border-bottom:1px solid #5c5c5c;
+        
+        -moz-border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 10px 10px 0;
+        border-radius:0 10px 10px 0;
+        khtml-border-radius:0 10px 10px 0;
+    }
+    
+    
+    .nav_list{ display:inline; height:62px; width:843px; }
+        
+        .nav_list li{
+            float:left;
+            height:62px;
+            text-align:center;
+            line-height:62px;
+            }
+        
+            .nav_list li span a{
+                font-size:15px;
+                padding:22px 20px 22px 20px;
+                font-family: 'Maven Pro', sans-serif;
+                text-shadow: 0px 2px 1px black;
+                color:#7cb232;
+                font-weight:bold;
+                
+                -moz-border-radius:0;
+                -webkit-border-radius:0;
+                border-radius:0;
+                khtml-border-radius:0;
+                
+                transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                -webkit-transition: all 0.35s;
+                -o-transition: all 0.35s;                
+            }
+            
+            .nav_list li span a:hover {
+                color:#fc670d;
+                text-shadow: 0px 2px 1px black;
+                background: rgba(0,0,0, 0.125);
+                box-shadow:inset 0 0 20px black;
+                
+                -moz-border-radius:0;
+                -webkit-border-radius:0;
+                border-radius:0;
+                khtml-border-radius:0;
+                
+                transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                -webkit-transition: all 0.35s;
+                -o-transition: all 0.35s;
+            }
+            
+                .nav_list li span{ height:100%; width:100%; display:block; }
+                
+.ContentWrapper{ width:100%; margin:0 auto; padding-top:40px; }
+        
+.FullWidth{
+    width:940px;
+    padding:20px 20px 20px 20px;
+    background: #ececec;
+    margin-bottom:20px;
+    
+    border-bottom:1px solid white;
+    border-top:1px solid #a7a7a7;
+    
+    box-shadow: inset 0px 2px 8px #c5c5c5;
+    
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    khtml-border-radius:10px;
+}
+
+.TwoThirds{
+    width:606px;
+    padding:20px 20px 20px 20px;
+    background: #ececec;
+    margin-bottom:20px;
+    
+    border-bottom:1px solid white;
+    border-top:1px solid #a7a7a7;
+    
+    box-shadow: inset 0px 2px 8px #c5c5c5;
+    
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    khtml-border-radius:10px;
+}
+
+.OneThird{
+    width:273px;
+    padding:20px 20px 20px 20px;
+    background: #ececec;
+    margin-bottom:20px;
+    
+    border-bottom:1px solid white;
+    border-top:1px solid #a7a7a7;
+    
+    box-shadow: inset 0px 2px 8px #c5c5c5;
+    
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    khtml-border-radius:10px;
+}
+
+
+.OneHalf{
+    width:440px;
+    padding:20px 20px 20px 20px;
+    background: #ececec;
+    margin-bottom:20px;
+    
+    border-bottom:1px solid white;
+    border-top:1px solid #a7a7a7;
+    
+    box-shadow: inset 0px 2px 8px #c5c5c5;
+    
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    khtml-border-radius:10px;
+}   
+
+
+.MiddleColumn{ margin-left:20px; }
+
+
+.CircleDiv{
+    float:left;
+    padding:5px;
+    height:30px;
+    width:30px;
+    background:#909090;
+    
+    box-shadow:0px 1px 1px white;
+    
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    khtml-border-radius:20px;
+    
+    color:white;
+    font-family: "abril-fatface";
+    font-size:22px;
+    text-align:center;
+    line-height:36px;
+}
+
+
+.virulent_logo{
+    float:left;
+    margin:40px 0 20px 100px;
+    
+    background: url(images/eria_sprite.png) no-repeat -822px -137px;
+    width: 222px;
+    height: 11px;
+}
+
+.cs_logo{
+    float:left;
+    margin:30px 0 20px 100px;
+    
+    background: url(images/eria_sprite.png) no-repeat -825px -193px;
+    width: 218px;
+    height: 40px;
+}
+
+.oncology_logo{
+    
+}
+
+.APAt_logo{
+    float:left;
+    margin:0 10px 0 90px; 
+    
+    background: url(images/eria_sprite.png) no-repeat -822px -13px;
+    width: 228px;
+    height: 96px;
+}
+
+
+.GameLink{
+    float:left;
+    height:95px;
+    width:440px;
+}
+
+.GameLink:hover{
+    height:95px;
+    width:440px;
+    background:#f5f5f5;
+    
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+}
+
+.GameLink span{ height:100%; width:100%; display:block; }
+
+
+
+
+
+
+.BigERIA{
+    float:left;
+    margin:0 0 50px 375px;
+    
+    background: url(images/eria_sprite.png) no-repeat -519px -123px;
+    width: 254px;
+    height: 207px;
+}
+
+
+
+
+
+
+.ERIA_logo{
+    background: url(images/eria_sprite.png) no-repeat -12px -13px;
+    width: 137px;
+    height: 118px;
+}
+
+
+.slogan{
+    height:108px;
+    width:980px;
+    margin:20px 0 0 0;
+    float:left;
+}
+
+    
+.search_container{ float:right; margin:12px 18px 0 0; }
+    input[type=search]{
+        -webkit-appearance:none;
+                
+        padding:10px;
+        width:200px;
+        background: black;
+        color:#ff9454;
+        font-family:georgia;
+        letter-spacing:1px;
+        
+        border:none;
+        border-top:3px solid black;
+        border-bottom:1px solid #5c5c5c;
+        
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        khtml-border-radius:10px;
+    }
+    
+    input[type=search]:focus{ outline:none; }
+    
+.ERIA_slogan{
+    float:left;
+    
+    margin:0 0 0 0;
+    
+    background: url(images/eria_sprite.png) no-repeat -30px -344px;
+    width: 980px;
+    height: 108px;
+}
+
+
+.footer_logo_container{
+    float:left;
+    width:980px;
+    margin:5px 0 20px 0;
+}
+
+
+.small_ERIA_logo{
+    margin:0 0 0 60px;
+    float:left;
+    
+    background: url(images/eria_sprite.png) no-repeat -55px -276px;
+    width: 51px;
+    height: 37px;
+}
+
+.MIR_logo{
+    margin:15px 0 0 270px;
+    float:left;    
+    
+    background: url(images/eria_sprite.png) no-repeat -459px -75px;
+    width: 133px;
+    height: 16px;
+}
+
+.UW_logo{
+    margin:0 0 0 60px;
+    float:left;    
+    
+    background: url(images/eria_sprite.png) no-repeat -462px -19px;
+    width: 98px;
+    height: 41px;
+}
+    
+.footer{
+    width:980px;
+    height:100px;
+    float:left;
+    text-align:center;
+    margin:20px 0 20px 0;
+    
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width : 980px ) {
+    
+    .page_wrap{ width:100%; }
+    
+    .ContentWrapper{ width:100%;}
+    .OneWide{ width:29%; }
+    .TwoWide{ width:59%; }
+    
+    
+    .small_eria_logo{
+        background: url(images/eria_sprite.png) no-repeat -30px -175px;
+	width: 101px;
+	height: 68px;    
+    }    
+    
+    
+    
+    .footer{ width:100%;}
+}
+
+
+
+
+@media ( max-width : 768px ) {
+    
+    .page_wrap{ width:100%; }
+    
+    .ContentWrapper{ width:100%;}
+    .OneWide{ width:27%; }
+    .TwoWide{ width:57%; }
+    
+    
+    .small_eria_logo{
+        background: url(images/eria_sprite.png) no-repeat -30px -175px;
+	width: 101px;
+	height: 68px;    
+    }    
+    
+    
+    
+    .footer{ width:100%;}
+}
+
+
+
+
+
+
+
+
+
+
